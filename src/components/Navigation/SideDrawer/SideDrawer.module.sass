@@ -1,0 +1,36 @@
+.SideDrawer
+    box-sizing: border-box
+    position: fixed
+    top: 10px
+    left: 0
+    border: 1px solid black  
+    width: 80%
+    height: calc( 100vh - 25px  )
+    background-color: white
+    z-index: 1000
+    transition: transform .1s linear
+    overflow: hidden
+    ul
+        height: 100%
+        list-style: none
+        display: flex
+        flex-direction: column
+        justify-content: space-evenly
+        &>li
+            padding: 20px 30px
+
+
+.Open
+    transform: translateX(0)
+
+
+.Closed
+    transform: translateX(-100%)
+
+
+
+@media ( min-width: 880px  )
+
+    .SideDrawer
+      display: none
+    
