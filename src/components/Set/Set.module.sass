@@ -1,0 +1,75 @@
+@import "../../sass-variables/colours.module.sass"
+.Card_Wrapper
+    box-sizing: border-box
+    border-radius: 15px
+    display: flex
+    padding: 40px 20px
+    margin: 20px
+    border: 1px solid rgba(0, 0, 0, 0)
+    box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.1), -1px -1px 5px rgba(0, 0, 0, 0.1)
+    flex-wrap: wrap
+
+    & > .Card_Image_Wrapper
+        img       
+            display: block
+            margin: 10px auto
+            border: 1px solid rgba(0, 0, 0, 0.1)
+            width: 100%
+            max-width: 140px
+            box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.1)
+            
+
+    & > .Card_Body_Wrapper
+            min-width: 240px
+            max-width: 380px
+            padding: 10px
+
+            & > .Card_Body_Content
+                line-height: 1.4
+                padding: 10px
+
+            & > .Card_Body_Footer
+                & > *
+                    display: block
+                    margin-left: auto
+                    margin-right: auto
+                    margin-top: 10px
+                   
+
+              
+
+
+@media screen and ( max-width: 1660px  )
+    .Card_Wrapper
+        flex-direction: column
+
+@media screen and ( min-width: 1221px  )
+
+     .Card_Wrapper
+         position: relative
+         & .Card_Body_Footer
+             position: absolute
+             top: 0
+             left: 0
+         & .Card_Body_Footer
+                width: 100%
+                height: 100%
+                display: flex
+                flex-direction: column
+                justify-content: center
+                align-items: center
+                transform: translateY(-5%) scale(0.85)
+                transition: transform .3s linear, opacity .1s .1s linear
+                opacity: 0
+                
+         &:hover
+            &  .Card_Image_Wrapper, .Card_Body_Content, .Body_Title
+                opacity: .5
+                filter: blur(10px)
+                transform: scale(0.9)
+            &   .Card_Body_Footer
+                transform: translateY(0%) scale(1) 
+                opacity: 1
+           
+
+

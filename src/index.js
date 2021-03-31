@@ -7,10 +7,12 @@ import { Provider } from "react-redux"
 import { combineReducers, createStore } from 'redux'
 import setsReducer from "./store/reducer/sets"
 import navReducer from "./store/reducer/nav"
+import shopsReducer from "./store/reducer/shops"
 
 const rootReducer = combineReducers({
   sets: setsReducer,
-  nav: navReducer
+  nav: navReducer,
+  shops: shopsReducer
 })
 
 

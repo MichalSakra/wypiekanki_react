@@ -14,6 +14,7 @@ const initialStore = {
             text: "Stwórz własną, niepowtarzalną kolekcję zawieszek, guzików. Zestaw Wypiekanek sprawi wiele wiele zabawy zarówno dzieciom, jak i dorosłym.",
             href: "#wypiekanki-kreatywna-zabawa",
             logoImg: null,
+            colour: "rgb(158, 223, 221)"
 
 
         },
@@ -25,6 +26,7 @@ const initialStore = {
             text: "Zaskocz wszystkich cytrusowymi guzikami lub kolczykami z soczystą malinką. Lubisz owoce? Owocowe Wypiekanki muszą być Twoje :)",
             href: "#wypiekanki-owocowe",
             logoImg: 'img/owocowe.jpg',
+            colour: "rgb(164, 212, 32)"
 
         }, {
             id: "w003",
@@ -34,6 +36,7 @@ const initialStore = {
             text: "Gratka dla wszystkich łasuchów. Wybierz zestaw Słodkich Wypiekanek i zawsze miej coś słodkiego przy sobie ;)",
             href: "#wypiekanki-slodkie",
             logoImg: 'img/slodkie.jpg',
+            colour: "rgb(236, 74, 97)"
 
         }, {
             id: "w004",
@@ -43,6 +46,7 @@ const initialStore = {
             text: "Ahoj przygodo! Nawet gdy do wakacji jeszcze daleko, z zestawem Morskich Wypiekanek przeniesiesz się w magiczny świat rajskich przygód.",
             href: "#wypiekanki-morskie",
             logoImg: 'img/morskie.jpg',
+            colour: "rgb(46, 127, 121)"
 
         }, {
             id: "w005",
@@ -52,15 +56,17 @@ const initialStore = {
             text: "Uwaga! Wykryto nowe formy życia :) Stwórz rakietę i odwiedź najdalsze zakamarki Wszechświata.",
             href: "#wypiekanki-kosmiczne",
             logoImg: 'img/kosmiczne.jpg',
+            colour: "rgb(18, 52, 98)"
 
         }, {
             id: "w006",
             name: "Wypiekanki zwierzakowe",
             buyLink: '#',
             frontImg: w006Img,
-            text: "NOWOŚĆ! Zwierzakowe Wypiekanki. Stwórz wyjątkowe ozdoby dla siebie i swoich najbliższych :)  ",
+            text: "Zwierzakowe Wypiekanki. Stwórz wyjątkowe ozdoby dla siebie i swoich najbliższych :)  ",
             href: "#wypiekanki-zwierzakowe",
             logoImg: 'img/zwierzakowe.jpg',
+            colour: "rgb(251, 167, 17)"
 
         },
     ]

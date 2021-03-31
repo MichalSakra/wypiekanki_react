@@ -4,7 +4,7 @@ import classes from './Section.module.sass';
 
 const Section = props => {
     return (
-        <section className={classes.Section}>
+        <section className={[classes.Section, props.classes].join(" ")}>
             {props.children}
         </section>
     )
