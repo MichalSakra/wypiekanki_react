@@ -8,11 +8,13 @@ import { combineReducers, createStore } from 'redux'
 import setsReducer from "./store/reducer/sets"
 import navReducer from "./store/reducer/nav"
 import shopsReducer from "./store/reducer/shops"
+import galleryReducer from "./store/reducer/gallery"
 
 const rootReducer = combineReducers({
   sets: setsReducer,
   nav: navReducer,
-  shops: shopsReducer
+  shops: shopsReducer,
+  gallery: galleryReducer
 })
 
 

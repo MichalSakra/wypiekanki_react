@@ -6,6 +6,7 @@ import Navigation from "./components/Navigation/Navigation"
 import Sets from "./Pages/Sets/Sets"
 import Home from "./Pages/Home/Home"
 import Map from "./Pages/Map/Map"
+import Gallery from "./Pages/Gallery/Gallery"
 import PageContainer from './containers/PageContainer/PageContainer';
 import Footer from "./components/Footer/Footer"
 function App() {
@@ -20,6 +21,7 @@ function App() {
           <Route path="/zestawy-wypiekanek" component={Sets} />
           <Route path="/" exact={true} component={Home} />
           <Route path="/gdzie-kupic-wypiekanki" exact={true} component={Map} />
+          <Route path="/galeria-wypiekanek" exact={true} component={Gallery} />
           <Footer />
         </PageContainer>
       </Router>
