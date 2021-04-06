@@ -4,11 +4,15 @@
     justify-content: space-around
 
 .Image
-    width: 100%
     max-width: 320px
     min-height: 140px
-    height: auto
-    margin: 10px
+    border: 1px solid rgba(0, 0, 0, 0)
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.21)
+    transition: transform .1s .05s linear, box-shadow .1s linear
+    &:hover
+        transform: scale(.99)
+        box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5)
+    
 .LazyLoadImage_Placeholder
     height: 250px
     width: 250px

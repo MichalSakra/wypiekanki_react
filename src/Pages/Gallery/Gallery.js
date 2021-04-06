@@ -4,7 +4,7 @@ import Section from '../../containers/Section/Section'
 import Image from "../../components/UI/Image/Image"
 
 import classes from './Gallery.module.sass';
-import Lightbox from 'react-image-lightbox';
+import Lightbox from "../../components/UI/LightboxItem/LightboxItem"
 import 'react-image-lightbox/style.css';
 class Gallery extends React.Component {
 
@@ -53,7 +53,7 @@ class Gallery extends React.Component {
                 {images !== [] ?
                     images.map((image, index) => {
 
-                        return <Image key={image} index={index} click={this.lightboxOpenHandler} src={image} />
+                        return <Image classes={classes.Image} key={image} index={index} click={this.lightboxOpenHandler} src={image} />
                     }) : null}
 
 
@@ -63,13 +63,13 @@ class Gallery extends React.Component {
                         mainSrc={images[photoIndex]}
                         nextSrc={images[(photoIndex + 1) % images.length]}
                         prevSrc={images[(photoIndex + images.length - 1) % images.length]}
-                        onCloseRequest={() => this.setState({ isLightboxOpen: false })}
-                        onMovePrevRequest={() =>
+                        closeRequest={() => this.setState({ isLightboxOpen: false })}
+                        movePrevRequest={() =>
                             this.setState({
                                 photoIndex: (photoIndex + images.length - 1) % images.length,
                             })
                         }
-                        onMoveNextRequest={() =>
+                        moveNextRequest={() =>
                             this.setState({
                                 photoIndex: (photoIndex + 1) % images.length,
                             })
