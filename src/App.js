@@ -7,6 +7,7 @@ import Sets from "./Pages/Sets/Sets"
 import Home from "./Pages/Home/Home"
 import Map from "./Pages/Map/Map"
 import Gallery from "./Pages/Gallery/Gallery"
+import Contact from "./Pages/Contact/Contact"
 import PageContainer from './containers/PageContainer/PageContainer';
 import Footer from "./components/Footer/Footer"
 function App() {
@@ -22,6 +23,7 @@ function App() {
           <Route path="/" exact={true} component={Home} />
           <Route path="/gdzie-kupic-wypiekanki" exact={true} component={Map} />
           <Route path="/galeria-wypiekanek" exact={true} component={Gallery} />
+          <Route path="/kontakt" exact={true} component={Contact} />
           <Footer />
         </PageContainer>
       </Router>

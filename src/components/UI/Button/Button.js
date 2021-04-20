@@ -1,5 +1,4 @@
 
-
 import React from 'react';
 import classes from "./Button.module.sass"
 
@@ -37,7 +36,7 @@ const Button = props => {
     }
 
 
-    return <button onClick={props.click} className={[classes.Button, classType, classSize].join(" ")}>{props.children}</button>
+    return <button disabled={props.disabled || false} onClick={props.click} className={[classes.Button, classType, classSize].join(" ")}>{props.children}</button>
 }
 
 export default Button

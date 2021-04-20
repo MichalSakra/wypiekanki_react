@@ -5,7 +5,7 @@ import Card from "../UI/Card/Card"
 
 const Set = (props) => {
 
-    const { frontImg, name, text, colour } = props.data
+    const { frontImg, name, text, colour, buyLink } = props.data
     return <Card classes={classes.Card_Wrapper} colour={colour}>
 
         <div className={classes.Card_Image_Wrapper}>
@@ -14,9 +14,10 @@ const Set = (props) => {
         <div className={classes.Card_Body_Wrapper}>
             <div className={classes.Body_Title}><h2>{name}</h2></div>
             <div className={classes.Card_Body_Content}>{text}</div>
-            <div className={classes.Card_Body_Footer}><Button click={() => props.galleryBtnClick(props.id)} btnSize="Big"
-                btnType="Primary-alt">galeria</Button>
-                <Button btnSize="Big"
+            <div className={classes.Card_Body_Footer}>
+                <Button click={() => props.galleryBtnClick(props.id)} btnSize="Big"
+                    btnType="Primary-alt">galeria</Button>
+                <Button click={() => { props.buyBtnClick(buyLink) }} btnSize="Big"
                     btnType="Secondary-alt">kup teraz</Button></div>
         </div>
     </Card>

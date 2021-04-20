@@ -2,10 +2,10 @@ import React from 'react';
 import { connect } from 'react-redux'
 import Section from '../../containers/Section/Section'
 import Image from "../../components/UI/Image/Image"
-
 import classes from './Gallery.module.sass';
 import Lightbox from "../../components/UI/LightboxItem/LightboxItem"
 import 'react-image-lightbox/style.css';
+
 class Gallery extends React.Component {
 
     state = {
@@ -20,7 +20,7 @@ class Gallery extends React.Component {
     }
 
     lightboxOpenHandler = (e) => {
-        const photoIndex = e.target.attributes["data-index"].value
+        const photoIndex = +e.target.attributes["data-index"].value
         this.setState(prev => {
             return {
                 ...prev,

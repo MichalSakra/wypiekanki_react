@@ -11,9 +11,9 @@ const Image = props => {
         <LazyLoadImage
             className={[classes.Image, props.classes].join(" ")}
             data-index={props.index}
-            onClick={(e) => props.click(e)}
+            onClick={props.click ? (e) => props.click(e) : null}
             src={props.src}
-            alt="Galeria wypiekanek"
+            alt={props.alt || "Wypiekanki - kreatywna zabawa!"}
             placeholder={<span className={classes.LazyLoadImage_Placeholder} />}
         />
     )

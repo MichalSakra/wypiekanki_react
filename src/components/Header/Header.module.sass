@@ -1,0 +1,50 @@
+.Header_Wrapper
+    overflow: hidden
+    width: 100%
+    box-sizing: border-box
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+    background-attachment: fixed
+    
+    & > *
+    .Images_Wrapper
+        position: relative
+        min-height: 60vh
+        .Bar
+            display: flex
+            justify-content: center
+            background-color: rgb(158, 223, 221)
+            width: 100%
+            position: absolute
+            img 
+                padding: 10px 20px
+                width: 90%
+                max-width: 720px
+        .Logo
+            width: 100%
+            padding: 20px
+            max-width: 640px
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+            position: absolute
+        .Subtitle
+            width: 240px
+            position: absolute
+            bottom: 10%
+            left: 25%
+
+    .Buttons_Bar
+        margin-bottom: 45px
+        padding: 20px  
+@media screen and ( max-width: 880px  )
+    .Header_Wrapper
+        .Images_Wrapper
+            .Subtitle
+                left: 15%
+                width: 200px
+            .Bar
+
+            .Logo
+                width: 90vw

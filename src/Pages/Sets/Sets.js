@@ -32,6 +32,9 @@ class Sets extends React.Component {
         this.setState({ isLightboxOpen: false, images: [], photoIndex: 0 })
     }
 
+    buyBynHandler = (link) => {
+        window.open(link, "_blank")
+    }
 
     render() {
         const { isLightboxOpen, images, photoIndex } = this.state
@@ -56,7 +59,7 @@ class Sets extends React.Component {
                 />
             ) : null}
             {this.props.sets.map((set, i) => {
-                return <Set key={set.id} data={set} id={set.id} galleryBtnClick={this.showLightboxModal} />
+                return <Set key={set.id} data={set} id={set.id} buyBtnClick={this.buyBynHandler} galleryBtnClick={this.showLightboxModal} />
 
             })}
 

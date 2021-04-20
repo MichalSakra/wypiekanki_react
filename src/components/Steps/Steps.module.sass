@@ -1,0 +1,42 @@
+@import "../../sass-variables/colours.module.sass"
+.Steps
+    box-sizing: border-box
+.Steps_Wrapper
+    width: 100%
+    padding: 20px
+    box-sizing: border-box
+    background-color: $primary-colour
+    border-bottom: 1px solid rgba( 0, 0, 0, 0)
+    box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.4)
+    h2
+        font-size: 2rem
+        font-weight: normal
+        color: #FEFEFE
+    h4
+        color: #FEFEFE
+    .Steps_Icons_Wrapper
+        display: flex
+        flex-direction: column
+        flex-wrap: wrap
+        justify-content: space-around
+        div
+            justify-content: center
+            display: flex
+            flex-wrap: wrap
+            margin: 15px 0
+        img
+            padding: 10px
+            max-width: 280px
+            box-sizing: border-box
+
+.BeforeAfter
+    img 
+        width: 100%
+        max-width: 720px
+        display: block
+        margin: 45px auto
+@media screen and ( max-width: 880px )
+    .Steps_Wrapper
+        h2
+            font-size: 1.5rem
+  

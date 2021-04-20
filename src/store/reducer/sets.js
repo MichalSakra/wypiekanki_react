@@ -9,7 +9,7 @@ const initialStore = {
     sets: [{
             id: "w001",
             name: "Wypiekanki",
-            buyLink: '#',
+            buyLink: 'https://www.fabrykafrajdy.pl/pl/p/Wypiekanki-kreatywna-zabawa/37',
             frontImg: w001Img,
             text: "Stwórz własną, niepowtarzalną kolekcję zawieszek, guzików. Zestaw Wypiekanek sprawi wiele wiele zabawy zarówno dzieciom, jak i dorosłym.",
             href: "#wypiekanki-kreatywna-zabawa",
@@ -21,7 +21,7 @@ const initialStore = {
         {
             id: "w002",
             name: "Wypiekanki owocowe",
-            buyLink: '#',
+            buyLink: 'https://www.fabrykafrajdy.pl/pl/p/Wypiekanki-owocowe-kreatywna-zabawa-/45',
             frontImg: w002Img,
             text: "Zaskocz wszystkich cytrusowymi guzikami lub kolczykami z soczystą malinką. Lubisz owoce? Owocowe Wypiekanki muszą być Twoje :)",
             href: "#wypiekanki-owocowe",
@@ -31,7 +31,7 @@ const initialStore = {
         }, {
             id: "w003",
             name: "Wypiekanki słodkie",
-            buyLink: '#',
+            buyLink: 'https://www.fabrykafrajdy.pl/pl/p/Wypiekanki-slodkie-kreatywna-zabawa-/46',
             frontImg: w003Img,
             text: "Gratka dla wszystkich łasuchów. Wybierz zestaw Słodkich Wypiekanek i zawsze miej coś słodkiego przy sobie ;)",
             href: "#wypiekanki-slodkie",
@@ -41,7 +41,7 @@ const initialStore = {
         }, {
             id: "w004",
             name: "Wypiekanki morskie",
-            buyLink: '#',
+            buyLink: 'https://www.fabrykafrajdy.pl/pl/p/Wypiekanki-morskie-kreatywna-zabawa-/47',
             frontImg: w004Img,
             text: "Ahoj przygodo! Nawet gdy do wakacji jeszcze daleko, z zestawem Morskich Wypiekanek przeniesiesz się w magiczny świat rajskich przygód.",
             href: "#wypiekanki-morskie",
@@ -51,7 +51,7 @@ const initialStore = {
         }, {
             id: "w005",
             name: "Wypiekanki kosmiczne",
-            buyLink: '#',
+            buyLink: 'https://www.fabrykafrajdy.pl/pl/p/Wypiekanki-kosmiczne-kreatywna-zabawa-/48',
             frontImg: w005Img,
             text: "Uwaga! Wykryto nowe formy życia :) Stwórz rakietę i odwiedź najdalsze zakamarki Wszechświata.",
             href: "#wypiekanki-kosmiczne",
@@ -61,7 +61,7 @@ const initialStore = {
         }, {
             id: "w006",
             name: "Wypiekanki zwierzakowe",
-            buyLink: '#',
+            buyLink: 'https://www.fabrykafrajdy.pl/pl/p/Wypiekanki-zwierzakowe-kreatywna-zabawa-/49',
             frontImg: w006Img,
             text: "Zwierzakowe Wypiekanki. Stwórz wyjątkowe ozdoby dla siebie i swoich najbliższych :)  ",
             href: "#wypiekanki-zwierzakowe",

@@ -1,4 +1,17 @@
 @import "./sass-variables/colours.module"
+body
+    &::-webkit-scrollbar
+      background-color: $main-dark-colour
+      z-index: 1000
+      width: .68rem
+    &::-webkit-scrollbar-thumb
+      background-color: $main-bright-colour
+      border: 1px solid $primary-colour
+      border-radius: 10px
+      &:hover
+        background-color: $primary-colour
+    
+
 .App 
   text-align: justify
   font-family: "Roboto", sans-serif
